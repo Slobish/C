@@ -7,7 +7,7 @@ void calculate(void);
 
 int main(void)
 {
-    char vector[]={1,0,5,74,8,6,1,8,4};
+    
     int selection[1];
     
     unsigned char outcome=0;
@@ -47,8 +47,8 @@ void calculate(void)
     int **r;
     int **s;
     int aux=0;
-    aux=(int)&a;
-    printf("%d",aux);
+    
+    printf("%p",&a);
     printf("            a   b   p   q   *p  *q   r   s  *r  *s  **r  **s\n");
     /*
     printf("a=9; b=4    %d   %d   %d   %d    %d   %d   %d   %d   %d   %d    %d    %d ",int(&a),int(&b),int(&p),&q,*p,*q,r,s,*r,*s,2,2);
