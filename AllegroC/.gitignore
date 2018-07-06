@@ -1,0 +1,15 @@
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# Compiled Static libraries
+*.log
+*.so
+
+#Executables
+*.exe
+*.out
+*.app
+
