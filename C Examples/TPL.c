@@ -39,23 +39,30 @@ int main(void)
 }
 
 void calculate(void)
-{
-    int a=9;
-    int b=4;
-    int *p;
-    int *q;
-    int **r;
-    int **s;
-    int aux=0;
+{   
+    char a;
+    char b;
     
-    printf("%p",&a);
-    printf("            a   b   p   q   *p  *q   r   s  *r  *s  **r  **s\n");
-    /*
-    printf("a=9; b=4    %d   %d   %d   %d    %d   %d   %d   %d   %d   %d    %d    %d ",int(&a),int(&b),int(&p),&q,*p,*q,r,s,*r,*s,2,2);
-    printf("a=9; b=4    %d   %d   %d   %d    %d   %d   %d   %d   %d   %d    %d    %d ",&a,&b,&p,&q,*p,*q,r,s,*r,*s,2,2);
-    printf("a=9; b=4    %d   %d   %d   %d    %d   %d   %d   %d   %d   %d    %d    %d ",&a,&b,&p,&q,*p,*q,r,s,*r,*s,2,2);
-    printf("a=9; b=4    %d   %d   %d   %d    %d   %d   %d   %d   %d   %d    %d    %d ",&a,&b,&p,&q,*p,*q,r,s,*r,*s,2,2);
-    */
+    char *p;
+    char *q;
+    
+    char **r;
+    char **k;
+    char **s;
+    
+    a=9;
+    b=4;
+    
+    printf("a=%d , b=%d , p=%p , q=%p , *p=%d *q=%d , r=%p ,s=%p ,*r=%p ,*s=%p , **r=%p , **s=%p",a,b,p,q,*p,*q,r,s,*r,*s,**r,**s);
+    p=&a;
+    q=&b;
+    printf("a=%d , b=%d , p=%p , q=%p , *p=%d *q=%d , r=%p ,s=%p ,*r=%p ,*s=%p , **r=%p , **s=%p",a,b,p,q,*p,*q,r,s,*r,*s,**r,**s);
+    r=&p;
+    s=&q;
+    printf("a=%d , b=%d , p=%p , q=%p , *p=%d *q=%d , r=%p ,s=%p ,*r=%p ,*s=%p , **r=%p , **s=%p",a,b,p,q,*p,*q,r,s,*r,*s,**r,**s);
+    **r=*q;
+    printf("a=%d , b=%d , p=%p , q=%p , *p=%d *q=%d , r=%p ,s=%p ,*r=%p ,*s=%p , **r=%p , **s=%p",a,b,p,q,*p,*q,r,s,*r,*s,**r,**s);
+    
 }
 
 void myStrlen(void)
